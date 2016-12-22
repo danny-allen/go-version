@@ -67,6 +67,19 @@ func (v Version) GetLatest() LogItem {
 	return log[(logCount-1)]
 }
 
+// Get the latest version of the app.
+func (v Version) GetLast() LogItem {
+
+	// Get log data, if needed.
+	log := getLogData()
+
+	// Get the number of log items.
+	logCount := len(log)
+
+	// Return the last log.
+	return log[(logCount-1)]
+}
+
 // Get the data for the log.
 func getLogData() []LogItem {
 

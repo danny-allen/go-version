@@ -10,6 +10,7 @@ type VInterface interface {
 	FindByTag() 	LogItem
 	GetCurrent() 	LogItem
 	GetLatest() 	LogItem
+	GetLast() 		LogItem
 }
 
 // Version data struct.
